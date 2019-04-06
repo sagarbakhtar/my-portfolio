@@ -27,20 +27,21 @@ function Header(props) {
                 <Nav.Link href="#link">Skills</Nav.Link>
                 <Nav.Link href="#link">Contact</Nav.Link>
             </Nav>
-            <Nav>
-                <Nav.Link target="_blank" href={process.env.REACT_APP_GITHUB_PROFILE_URL}>
+            
+            <div>
+                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_GITHUB_PROFILE_URL}>
                     <FontAwesomeIcon icon={faGithub} />
-                </Nav.Link>
-                <Nav.Link target="_blank" href={process.env.REACT_APP_LINKEDIN_PROFILE_URL}>
+                </a>
+                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_LINKEDIN_PROFILE_URL}>
                     <FontAwesomeIcon icon={faLinkedin} />
-                </Nav.Link>
-                <Nav.Link target="_blank" href={process.env.REACT_APP_FACEBOOK_PROFILE_URL}>
+                </a>
+                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_FACEBOOK_PROFILE_URL}>
                     <FontAwesomeIcon icon={faFacebook} />
-                </Nav.Link>
-                <Nav.Link target="_blank" href={process.env.REACT_APP_INSTAGRAM_PROFILE_URL}>
+                </a>
+                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_INSTAGRAM_PROFILE_URL}>
                     <FontAwesomeIcon icon={faInstagram} />
-                </Nav.Link>
-            </Nav>
+                </a>
+            </div>
         </Navbar.Collapse>
     </Navbar>
     );
