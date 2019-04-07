@@ -1,23 +1,30 @@
+body{
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+}
 .navbar-link{
     padding: 0.5em;
     color: white;
 }
 
 .main-container{
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 .main-container .row+.row{
-    margin-top: 9em;
+    margin-top: 6em;
+    padding-top: 1em; 
 }
 
-#experience-section .timeline {
+.card-title {
+    border-bottom: var(--secondary) solid 1px;
+}
+#experience .timeline {
     list-style-type: none;
     position: relative;
 }
-#experience-section .timeline:before {
+#experience .timeline:before {
     content: ' ';
-    background: #d4d9df;
+    background: var(--secondary);
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -25,11 +32,11 @@
     height: 100%;
     z-index: 400;
 }
-#experience-section ul.timeline > li {
+#experience ul.timeline > li {
     margin: 20px 0;
     padding-left: 20px;
 }
-#experience-section ul.timeline > li:before {
+#experience ul.timeline > li:before {
     content: ' ';
     background: white;
     display: inline-block;
@@ -40,4 +47,52 @@
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+#contact section a {
+    padding: 0.5em;
+    margin:0 0.5em;
+    vertical-align: middle;
+}
+
+#contact a:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+#contact a:link, #contact a:visited {
+    text-decoration: none;
+    color: inherit
+}
+#contact section+section{
+    margin-top:2em;
+}
+
+#skills section{
+    display: inline-block;    
+    text-align: center;  
+    padding: 1em; 
+    width: 8em; 
+}
+
+#skills section p {
+    margin-top: 0.7em;    
+}
+
+@media (min-width: 320px) { 
+    #skills section{
+        padding: 0.4em;
+        margin: 0;
+        width: 6em;
+    }
+}
+
+@media (min-width: 576px) { 
+    #skills section{        
+        margin: 0.5em;
+        width: inherit;
+    }
+}
+
+@media (min-width: 768px) { 
+
 }

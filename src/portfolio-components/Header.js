@@ -1,12 +1,8 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import Image from 'react-bootstrap/Image';
+import { SocialLinks } from './SocialLinks';
 
 function Header(props) {
     return (
@@ -22,26 +18,13 @@ function Header(props) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link href="/" active={true}>About</Nav.Link>
-                <Nav.Link href="#link">Experience</Nav.Link>
-                <Nav.Link href="#link">Skills</Nav.Link>
-                <Nav.Link href="#link">Contact</Nav.Link>
+                <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link href="#experience">Experience</Nav.Link>
+                <Nav.Link href="#skills">Skills</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
-            
-            <div>
-                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_GITHUB_PROFILE_URL}>
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_LINKEDIN_PROFILE_URL}>
-                    <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_FACEBOOK_PROFILE_URL}>
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-                <a className="navbar-link" rel="noopener noreferrer" target="_blank" href={process.env.REACT_APP_INSTAGRAM_PROFILE_URL}>
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-            </div>
+
+            <SocialLinks linkClassName="navbar-link" />
         </Navbar.Collapse>
     </Navbar>
     );
