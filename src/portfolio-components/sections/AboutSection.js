@@ -13,6 +13,7 @@ function AboutSection(props) {
             </h2>            
             <p>
                 I want to make things that make difference.
+                <br/>             
             </p>   
         </Card.Body>
     </Card>

@@ -11,8 +11,8 @@ body{
 }
 
 .main-container .row+.row{
-    margin-top: 6em;
-    padding-top: 1em; 
+    /* margin-top: 6em; */
+    /* padding-top: 1em;  */
 }
 
 .card-title {
@@ -69,9 +69,10 @@ body{
 
 #skills section{
     display: inline-block;    
-    text-align: center;  
-    padding: 1em; 
-    width: 8em; 
+    /* text-align: center;   */
+    /* margin: 0.5em; */
+    /* padding: 1em;  */
+    /* width: 7em;  */
 }
 
 #skills section p {
@@ -80,19 +81,21 @@ body{
 
 @media (min-width: 320px) { 
     #skills section{
-        padding: 0.4em;
-        margin: 0;
-        width: 6em;
+        /* padding: 0.1em; */
+        /* margin: 0.3em; */
+        /* width: 5em; */
     }
 }
 
 @media (min-width: 576px) { 
     #skills section{        
-        margin: 0.5em;
-        width: inherit;
+        /* width: inherit; */
     }
 }
 
 @media (min-width: 768px) { 
-
+    #skills section{
+        /* padding: 0.4em; */
+        /* width: 7em; */
+    }
 }

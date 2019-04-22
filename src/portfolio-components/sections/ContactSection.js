@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import { SocialLinks } from './SocialLinks';
+import { SocialLinks } from './../SocialLinks';
 
 function ContactSection(props) {
     return (
@@ -12,7 +12,7 @@ function ContactSection(props) {
                 <h4>Contact</h4>
             </Card.Title>
             <section>
-                <FontAwesomeIcon size="2x" icon={faEnvelope} /> <a href="mailto:s.v.bakhtar@gmail.com">s.v.bakhtar@gmail.com</a>
+                <FontAwesomeIcon style={{verticalAlign: 'middle'}} size="2x" icon={faEnvelope} /> <a href="mailto:s.v.bakhtar@gmail.com">s.v.bakhtar@gmail.com</a>
             </section>
 
             <SocialLinks linkIconSize="2x" />
